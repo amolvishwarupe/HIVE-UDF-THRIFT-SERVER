@@ -1,0 +1,2 @@
+# HIVE-UDF-THRIFT-SERVER
+Assignments

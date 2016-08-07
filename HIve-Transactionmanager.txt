@@ -1,0 +1,2056 @@
+HIve Transaction manager Assignments 
+
+CREATE TABLE college(clg_id int,clg_name string,clg_loc string) 
+clustered by (clg_id) into 5 buckets stored as orc TBLPROPERTIES('transactional'='true');
+
+
+INSERT INTO table college values(1,'nec','nlr'),(2,'vit','vlr'),(3,'srm','chen'),(4,'lpu','del'),(5,'stanford','uk'),(6,'JNTUA','atp'),(7,'cambridge','us');
+
+UPDATE college set clg_name = 'ABC' where clg_id = 2;
+
+DELETE FROM college where clg_id = 7;
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Log 
+Lindsay Whalen  United States   Basketball      NULL
+Deron Williams  United States   Basketball      NULL
+Isabelle Yacoubou       France  Basketball      NULL
+Svetlana Abrosimova     Russia  Basketball      NULL
+Carmelo Anthony United States   Basketball      NULL
+Seimone Augustus        United States   Basketball      NULL
+Suzy Batkovic   Australia       Basketball      NULL
+Tully Bevilaqua Australia       Basketball      NULL
+Sue Bird        United States   Basketball      NULL
+Carlos Boozer   United States   Basketball      NULL
+Chris Bosh      United States   Basketball      NULL
+Kobe Bryant     United States   Basketball      NULL
+José Manuel Calderón    Spain   Basketball      NULL
+Tamika Catchings        United States   Basketball      NULL
+Rohanee Cox     Australia       Basketball      NULL
+Carlos Delfino  Argentina       Basketball      NULL
+Rudy Fernández  Spain   Basketball      NULL
+Sylvia Fowles   United States   Basketball      NULL
+Jorge Garbajosa Spain   Basketball      NULL
+Marc Gasol      Spain   Basketball      NULL
+Pau Gasol       Spain   Basketball      NULL
+Manu Ginóbili   Argentina       Basketball      NULL
+Román González  Argentina       Basketball      NULL
+Hollie Grima    Australia       Basketball      NULL
+Juan Pedro Gutiérrez    Argentina       Basketball      NULL
+Leonardo Gutiérrez      Argentina       Basketball      NULL
+Becky Hammon    Russia  Basketball      NULL
+Kristi Harrower Australia       Basketball      NULL
+Dwight Howard   United States   Basketball      NULL
+Lauren Jackson  Australia       Basketball      NULL
+LeBron James    United States   Basketball      NULL
+Carlos Jiménez  Spain   Basketball      NULL
+Federico Kammerichs     Argentina       Basketball      NULL
+Marina Karpunina        Russia  Basketball      NULL
+Jason Kidd      United States   Basketball      NULL
+Ilona Korstin   Russia  Basketball      NULL
+Marina Kuzina   Russia  Basketball      NULL
+Kara Lawson     United States   Basketball      NULL
+Lisa Leslie     United States   Basketball      NULL
+Yekaterina Lisina       Russia  Basketball      NULL
+Raúl López      Spain   Basketball      NULL
+DeLisha Milton-Jones    United States   Basketball      NULL
+Álex Mumbrú     Spain   Basketball      NULL
+Juan Carlos Navarro     Spain   Basketball      NULL
+Andrés Nocioni  Argentina       Basketball      NULL
+Fabricio Oberto Argentina       Basketball      NULL
+Irina Osipova   Russia  Basketball      NULL
+Candace Parker  United States   Basketball      NULL
+Chris Paul      United States   Basketball      NULL
+Erin Phillips   Australia       Basketball      NULL
+Cappie Pondexter        United States   Basketball      NULL
+Antonio Porta   Argentina       Basketball      NULL
+Pablo Prigioni  Argentina       Basketball      NULL
+Tayshaun Prince United States   Basketball      NULL
+Paolo Quinteros Argentina       Basketball      NULL
+Oksana Rakhmatulina     Russia  Basketball      NULL
+Emma Randall    Australia       Basketball      NULL
+Michael Redd    United States   Basketball      NULL
+Felipe Reyes    Spain   Basketball      NULL
+Berni Rodríguez Spain   Basketball      NULL
+Ricky Rubio     Spain   Basketball      NULL
+Luis Scola      Argentina       Basketball      NULL
+Jenni Screen    Australia       Basketball      NULL
+Tatyana Shchyegoleva    Russia  Basketball      NULL
+Katie Smith     United States   Basketball      NULL
+Belinda Snell   Australia       Basketball      NULL
+Irina Sokolovskaya      Russia  Basketball      NULL
+Mariya Stepanova        Russia  Basketball      NULL
+Laura Summerton-Hodges  Australia       Basketball      NULL
+Diana Taurasi   United States   Basketball      NULL
+Penny Taylor    Australia       Basketball      NULL
+Tina Thompson   United States   Basketball      NULL
+Nataliya Vodopyanova    Russia  Basketball      NULL
+Dwyane Wade Jr. United States   Basketball      NULL
+Deron Williams  United States   Basketball      NULL
+Carmelo Anthony United States   Basketball      NULL
+Anna Arkhipova  Russia  Basketball      NULL
+Olga Arteshina  Russia  Basketball      NULL
+Yelena Baranova Russia  Basketball      NULL
+Gianluca Basile Italy   Basketball      NULL
+Suzy Batkovic   Australia       Basketball      NULL
+Sue Bird        United States   Basketball      NULL
+Carlos Boozer   United States   Basketball      NULL
+Sandy Brondello Australia       Basketball      NULL
+Massimo Bulleri Italy   Basketball      NULL
+Swin Cash       United States   Basketball      NULL
+Tamika Catchings        United States   Basketball      NULL
+Roberto Chiacig Italy   Basketball      NULL
+Allison Cook-Tranquilli Australia       Basketball      NULL
+Carlos Delfino  Argentina       Basketball      NULL
+Tim Duncan      United States   Basketball      NULL
+Trish Fallon    Australia       Basketball      NULL
+Gabriel Fernández       Argentina       Basketball      NULL
+Jack Galanda    Italy   Basketball      NULL
+Luca Garri      Italy   Basketball      NULL
+Manu Ginóbili   Argentina       Basketball      NULL
+Yolanda Griffith        United States   Basketball      NULL
+Diana Gustilina Russia  Basketball      NULL
+Leonardo Gutiérrez      Argentina       Basketball      NULL
+Kristi Harrower Australia       Basketball      NULL
+Walter Herrmann Argentina       Basketball      NULL
+Allen Iverson   United States   Basketball      NULL
+Lauren Jackson  Australia       Basketball      NULL
+LeBron James    United States   Basketball      NULL
+Richard Jefferson       United States   Basketball      NULL
+Shannon Johnson United States   Basketball      NULL
+Mariya Kalmykova        Russia  Basketball      NULL
+Yelena Karpova  Russia  Basketball      NULL
+Ilona Korstin   Russia  Basketball      NULL
+Lisa Leslie     United States   Basketball      NULL
+Stephon Marbury United States   Basketball      NULL
+Denis Marconato Italy   Basketball      NULL
+Shawn Marion    United States   Basketball      NULL
+Michele Mian    Italy   Basketball      NULL
+Alejandro Ariel Montecchia      Argentina       Basketball      NULL
+Andrés Nocioni  Argentina       Basketball      NULL
+Fabricio Oberto Argentina       Basketball      NULL
+Lamar Odom      United States   Basketball      NULL
+Emeka Okafor    United States   Basketball      NULL
+Irina Osipova   Russia  Basketball      NULL
+Natalie Porter  Australia       Basketball      NULL
+Alicia Poto     Australia       Basketball      NULL
+Gianmarco Pozzecco      Italy   Basketball      NULL
+Nikola Radulovic        Italy   Basketball      NULL
+Oksana Rakhmatulina     Russia  Basketball      NULL
+Alex Righetti   Italy   Basketball      NULL
+Ruth Riley      United States   Basketball      NULL
+Rodolfo Rombaldoni      Italy   Basketball      NULL
+Pepe Sánchez    Argentina       Basketball      NULL
+Luis Scola      Argentina       Basketball      NULL
+Hugo Ariel Sconochini   Argentina       Basketball      NULL
+Tatyana Shchyegoleva    Russia  Basketball      NULL
+Katie Smith     United States   Basketball      NULL
+Belinda Snell   Australia       Basketball      NULL
+Matteo Soragna  Italy   Basketball      NULL
+Rachael Sporn   Australia       Basketball      NULL
+Dawn Staley     United States   Basketball      NULL
+Mariya Stepanova        Russia  Basketball      NULL
+Amar'e Stoudemire       United States   Basketball      NULL
+Laura Summerton-Hodges  Australia       Basketball      NULL
+Sheryl Swoopes  United States   Basketball      NULL
+Diana Taurasi   United States   Basketball      NULL
+Penny Taylor    Australia       Basketball      NULL
+Tina Thompson   United States   Basketball      NULL
+Nataliya Vodopyanova    Russia  Basketball      NULL
+Dwyane Wade Jr. United States   Basketball      NULL
+Rubén Wolkowyski        Argentina       Basketball      NULL
+Shareef Abdur-Rahim     United States   Basketball      NULL
+Dainius Adomaitis       Lithuania       Basketball      NULL
+Adriana Brazil  Basketball      NULL
+Adrianinha      Brazil  Basketball      NULL
+Alessandra      Brazil  Basketball      NULL
+Ray Allen       United States   Basketball      NULL
+Vin Baker       United States   Basketball      NULL
+Jim Bilba       France  Basketball      NULL
+Ruthie Bolton-Holifield United States   Basketball      NULL
+Yann Bonato     France  Basketball      NULL
+Carla Boyd      Australia       Basketball      NULL
+Michelle Brogan-Griffiths       Australia       Basketball      NULL
+Sandy Brondello Australia       Basketball      NULL
+Vince Carter    United States   Basketball      NULL
+Cíntia  Brazil  Basketball      NULL
+Cláudinha       Brazil  Basketball      NULL
+Makan Dioumassi France  Basketball      NULL
+Teresa Edwards  United States   Basketball      NULL
+Gintaras Einikis        Lithuania       Basketball      NULL
+Trish Fallon    Australia       Basketball      NULL
+Laurent Foirest France  Basketball      NULL
+Thierry Gadou   France  Basketball      NULL
+Kevin Garnett   United States   Basketball      NULL
+Andrius Giedraitis      Lithuania       Basketball      NULL
+Shelley Gorman-Sandie   Australia       Basketball      NULL
+Yolanda Griffith        United States   Basketball      NULL
+Tim Hardaway    United States   Basketball      NULL
+Kristi Harrower Australia       Basketball      NULL
+Helen   Brazil  Basketball      NULL
+Jo Hill Australia       Basketball      NULL
+Allan Houston   United States   Basketball      NULL
+Lauren Jackson  Australia       Basketball      NULL
+Janeth  Brazil  Basketball      NULL
+Šarunas Jasikevicius    Lithuania       Basketball      NULL
+Cyril Julian    France  Basketball      NULL
+Kelly   Brazil  Basketball      NULL
+Jason Kidd      United States   Basketball      NULL
+Annie La Fleur  Australia       Basketball      NULL
+Lisa Leslie     United States   Basketball      NULL
+Lilian  Brazil  Basketball      NULL
+Kestutis Marciulionis   Lithuania       Basketball      NULL
+Tomas Masiulis  Lithuania       Basketball      NULL
+Darius Maskoliunas      Lithuania       Basketball      NULL
+Nikki McCray    United States   Basketball      NULL
+Antonio McDyess United States   Basketball      NULL
+DeLisha Milton-Jones    United States   Basketball      NULL
+Alonzo Mourning United States   Basketball      NULL
+Crawford Palmer France  Basketball      NULL
+Gary Payton     United States   Basketball      NULL
+Antoine Rigaudeau       France  Basketball      NULL
+Stéphane Risacher       France  Basketball      NULL
+Laurent Sciarra France  Basketball      NULL
+Silvinha        Brazil  Basketball      NULL
+Ramunas Šiškauskas      Lithuania       Basketball      NULL
+Katie Smith     United States   Basketball      NULL
+Steve Smith     United States   Basketball      NULL
+Marta Sobral    Brazil  Basketball      NULL
+Darius Songaila Lithuania       Basketball      NULL
+Moustapha Sonko France  Basketball      NULL
+Rachael Sporn   Australia       Basketball      NULL
+Dawn Staley     United States   Basketball      NULL
+Saulius Štombergas      Lithuania       Basketball      NULL
+Sheryl Swoopes  United States   Basketball      NULL
+Mindaugas Timinskas     Lithuania       Basketball      NULL
+Michele Timms   Australia       Basketball      NULL
+Frédéric Weis   France  Basketball      NULL
+Jenny Whittle   Australia       Basketball      NULL
+Natalie Williams        United States   Basketball      NULL
+Kara Wolters    United States   Basketball      NULL
+Zaine   Brazil  Basketball      NULL
+Eurelijus Žukauskas     Lithuania       Basketball      NULL
+Mathias Boe     Denmark Badminton       NULL
+Cai Yun China   Badminton       NULL
+Chen Long       China   Badminton       NULL
+Fu Haifeng      China   Badminton       NULL
+Mizuki Fujii    Japan   Badminton       NULL
+Jeong Jae-Seong South Korea     Badminton       NULL
+Reika Kakiiwa   Japan   Badminton       NULL
+Lee Chong Wei   Malaysia        Badminton       NULL
+Lee Yong-Dae    South Korea     Badminton       NULL
+Li Xuerui       China   Badminton       NULL
+Lin Dan China   Badminton       NULL
+Ma Jin  China   Badminton       NULL
+Carsten Mogensen        Denmark Badminton       NULL
+Saina Nehwal    India   Badminton       NULL
+Joachim Fischer Nielsen Denmark Badminton       NULL
+Christinna Pedersen     Denmark Badminton       NULL
+Valeriya Sorokina       Russia  Badminton       NULL
+Tian Qing       China   Badminton       NULL
+Nina Vislova    Russia  Badminton       NULL
+Wang Yihan      China   Badminton       NULL
+Xu Chen China   Badminton       NULL
+Zhang Nan       China   Badminton       NULL
+Cai Yun China   Badminton       NULL
+Chen Jin        China   Badminton       NULL
+Du Jing China   Badminton       NULL
+Fu Haifeng      China   Badminton       NULL
+He Hanbin       China   Badminton       NULL
+Hwang Ji-Man    South Korea     Badminton       NULL
+Markis Kido     Indonesia       Badminton       NULL
+Lee Chong Wei   Malaysia        Badminton       NULL
+Lee Gyeong-Won  South Korea     Badminton       NULL
+Lee Jae-Jin     South Korea     Badminton       NULL
+Lee Yong-Dae    South Korea     Badminton       NULL
+Lin Dan China   Badminton       NULL
+Lilyana Natsir  Indonesia       Badminton       NULL
+Hendra Setiawan Indonesia       Badminton       NULL
+Wei Yili        China   Badminton       NULL
+Nova Widianto   Indonesia       Badminton       NULL
+Xie Xingfan     China   Badminton       NULL
+Maria Yulianti  Indonesia       Badminton       NULL
+Zhang Ning      China   Badminton       NULL
+Zhang Yawen     China   Badminton       NULL
+Gail Emms       Great Britain   Badminton       NULL
+Hian Eng        Indonesia       Badminton       NULL
+Jens Eriksen    Denmark Badminton       NULL
+Ha Tae-Gwon     South Korea     Badminton       NULL
+Taufik Hidayat  Indonesia       Badminton       NULL
+Huang Sui       China   Badminton       NULL
+Kim Dong-Mun    South Korea     Badminton       NULL
+Sony Dwi Kuncoro        Indonesia       Badminton       NULL
+Lee Dong-Su     South Korea     Badminton       NULL
+Lee Gyeong-Won  South Korea     Badminton       NULL
+Flandy Limpele  Indonesia       Badminton       NULL
+Mia Audina      Netherlands     Badminton       NULL
+Na Gyeong-Min   South Korea     Badminton       NULL
+Nathan Robertson        Great Britain   Badminton       NULL
+Mette Schjoldager       Denmark Badminton       NULL
+Son Seung-Mo    South Korea     Badminton       NULL
+Yang Wei        China   Badminton       NULL
+Yu Yong-Seong   South Korea     Badminton       NULL
+Zhang Jiewen    China   Badminton       NULL
+Zhang Jun       China   Badminton       NULL
+Zhang Ning      China   Badminton       NULL
+Zhou Mi China   Badminton       NULL
+Simon Archer    Great Britain   Badminton       NULL
+Ge Fei  China   Badminton       NULL
+Gong Zhichao    China   Badminton       NULL
+Gu Jun  China   Badminton       NULL
+Tony Gunawan    Indonesia       Badminton       NULL
+Ha Tae-Gwon     South Korea     Badminton       NULL
+Trikus Haryanto Indonesia       Badminton       NULL
+Hendrawan       Indonesia       Badminton       NULL
+Huang Nanyan    China   Badminton       NULL
+Ji Xinpeng      China   Badminton       NULL
+Kim Dong-Mun    South Korea     Badminton       NULL
+Lee Dong-Su     South Korea     Badminton       NULL
+Camilla Martin  Denmark Badminton       NULL
+Qin Yiyuan      China   Badminton       NULL
+Minarti Timur   Indonesia       Badminton       NULL
+Candra Wijaya   Indonesia       Badminton       NULL
+Joanne Wright-Goode     Great Britain   Badminton       NULL
+Xia Xuanze      China   Badminton       NULL
+Yang Wei        China   Badminton       NULL
+Ye Zhaoying     China   Badminton       NULL
+Yu Yong-Seong   South Korea     Badminton       NULL
+Zhang Jun       China   Badminton       NULL
+Valerie Adams-Vili      New Zealand     Athletics       NULL
+Habiba Al-Ghribi-Boudra Tunisia Athletics       NULL
+Ade Alleyne-Forte       Trinidad and Tobago     Athletics       NULL
+Nijel Amos      Botswana        Athletics       NULL
+Sofia Assefa    Ethiopia        Athletics       NULL
+Ryan Bailey     United States   Athletics       NULL
+Kemar Bailey-Cole       Jamaica Athletics       NULL
+Keshia Baker    United States   Athletics       NULL
+Brigetta Barrett        United States   Athletics       NULL
+Erick Barrondo  Guatemala       Athletics       NULL
+Mutaz Essa Barshim      Qatar   Athletics       NULL
+Tariku Bekele   Ethiopia        Athletics       NULL
+Keston Bledman  Trinidad and Tobago     Athletics       NULL
+Chris Brown     Bahamas Athletics       NULL
+Yelyzaveta Bryzhina     Ukraine Athletics       NULL
+Gamze Bulut     Turkey  Athletics       NULL
+Marc Burns      Trinidad and Tobago     Athletics       NULL
+Asli Çakir      Turkey  Athletics       NULL
+Emmanuel Callender      Trinidad and Tobago     Athletics       NULL
+Schillonie Calvert      Jamaica Athletics       NULL
+Nesta Carter    Jamaica Athletics       NULL
+Chen Ding       China   Athletics       NULL
+Tatyana Chernova        Russia  Athletics       NULL
+Anna Chicherova Russia  Athletics       NULL
+Javier Culson   Puerto Rico     Athletics       NULL
+Christine Day   Jamaica Athletics       NULL
+Meseret Defar   Ethiopia        Athletics       NULL
+Janay DeLoach   United States   Athletics       NULL
+Jeff Demps      United States   Athletics       NULL
+Lashinda Demus  United States   Athletics       NULL
+Diamond Dixon   United States   Athletics       NULL
+Fabrizio Donato Italy   Athletics       NULL
+Derek Drouin    Canada  Athletics       NULL
+Ashton Eaton    United States   Athletics       NULL
+Jessica Ennis   Great Britain   Athletics       NULL
+Tatyana Firova  Russia  Athletics       NULL
+Michael Frater  Jamaica Athletics       NULL
+Tyson Gay       United States   Athletics       NULL
+Dejen Gebremeskel       Ethiopia        Athletics       NULL
+Tiki Gelana     Ethiopia        Athletics       NULL
+Gong Lijiao     China   Athletics       NULL
+Robbie Grabarz  Great Britain   Athletics       NULL
+Yuliya Gushchina        Russia  Athletics       NULL
+Ehsan Haddadi   Iran    Athletics       NULL
+Trey Hardee     United States   Athletics       NULL
+Dawn Harper     United States   Athletics       NULL
+Robert Harting  Germany Athletics       NULL
+Betty Heidler   Germany Athletics       NULL
+Zuzana Hejnová  Czech Republic  Athletics       NULL
+Samantha Henry-Robinson Jamaica Athletics       NULL
+Reese Hoffa     United States   Athletics       NULL
+Raphael Holzdeppe       Germany Athletics       NULL
+Caterine Ibargüén       Colombia        Athletics       NULL
+Abdalaati Iguider       Morocco Athletics       NULL
+Yelena Isinbayeva       Russia  Athletics       NULL
+Maryam Jamal    Bahrain Athletics       NULL
+Kirani James    Grenada Athletics       NULL
+Priscah Jeptoo  Kenya   Athletics       NULL
+Olga Kaniskina  Russia  Athletics       NULL
+Gerd Kanter     Estonia Athletics       NULL
+Anastasiya Kapachinskaya        Russia  Athletics       NULL
+Ezekiel Kemboi  Kenya   Athletics       NULL
+Trell Kimmons   United States   Athletics       NULL
+Stephen Kiprotich       Uganda  Athletics       NULL
+Wilson Kipsang Kiprotich        Kenya   Athletics       NULL
+Sally Jepkosgei Kipyego Kenya   Athletics       NULL
+Sergey Kirdyapkin       Russia  Athletics       NULL
+Abel Kirui      Kenya   Athletics       NULL
+Timothy Kitum   Kenya   Athletics       NULL
+Bianca Knight   United States   Athletics       NULL
+Yevgeniya Kolodko       Russia  Athletics       NULL
+Primož Kozmus   Slovenia        Athletics       NULL
+Antonina Krivoshapka    Russia  Athletics       NULL
+Erik Kynard     United States   Athletics       NULL
+Yelena Lashmanova       Russia  Athletics       NULL
+Renaud Lavillenie       France  Athletics       NULL
+Deon Lendore    Trinidad and Tobago     Athletics       NULL
+Li Yanfeng      China   Athletics       NULL
+Shereefa Lloyd  Jamaica Athletics       NULL
+Thomas Longosiwa        Kenya   Athletics       NULL
+Tatyana Lysenko Russia  Athletics       NULL
+Tianna Madison  United States   Athletics       NULL
+Tomasz Majewski Poland  Athletics       NULL
+Taoufik Makhloufi       Algeria Athletics       NULL
+Josh Mance      United States   Athletics       NULL
+Leo Manzano     United States   Athletics       NULL
+Michael Mathieu Bahamas Athletics       NULL
+Francena McCorory       United States   Athletics       NULL
+Sally McLellan-Pearson  Australia       Athletics       NULL
+Tony McQuay     United States   Athletics       NULL
+Mahiedine Mekhissi-Benabbad     France  Athletics       NULL
+Aries Merritt   United States   Athletics       NULL
+Ramon Miller    Bahamas Athletics       NULL
+Manteo Mitchell United States   Athletics       NULL
+Koji Murofushi  Japan   Athletics       NULL
+Abel Mutai      Kenya   Athletics       NULL
+Nataliya Nazarova       Russia  Athletics       NULL
+Bryshon Nellum  United States   Athletics       NULL
+Christina Obergföll     Germany Athletics       NULL
+Christine Ohuruogu      Great Britain   Athletics       NULL
+Björn Otto      Germany Athletics       NULL
+Oleksandr P'iatnytsia   Ukraine Athletics       NULL
+Hansle Parchment        Jamaica Athletics       NULL
+Krisztián Pars  Hungary Athletics       NULL
+Darvis Patton   United States   Athletics       NULL
+Sandra Perkovic Croatia Athletics       NULL
+Tatyana Petrova-Arkhipova       Russia  Athletics       NULL
+Demetrius Pinder        Bahamas Athletics       NULL
+Darya Pishchalnikova    Russia  Athletics       NULL
+Yekaterina Poistogova   Russia  Athletics       NULL
+Olesia Povkh    Ukraine Athletics       NULL
+Qieyang Shenjie China   Athletics       NULL
+Brittney Reese  United States   Athletics       NULL
+Jason Richardson        United States   Athletics       NULL
+Mariya Riemien  Ukraine Athletics       NULL
+David Rudisha   Kenya   Athletics       NULL
+Galen Rupp      United States   Athletics       NULL
+Greg Rutherford Great Britain   Athletics       NULL
+Antti Ruuskanen Finland Athletics       NULL
+Olga Rypakova   Kazakhstan      Athletics       NULL
+Olha Saladukha  Ukraine Athletics       NULL
+Félix Sánchez   Dominican Republic      Athletics       NULL
+Luguelín Santos Dominican Republic      Athletics       NULL
+Mariya Savinova Russia  Athletics       NULL
+Lilli Schwarzkopf       Germany Athletics       NULL
+Caster Semenya  South Africa    Athletics       NULL
+Svetlana Shkolina       Russia  Athletics       NULL
+Si Tianfeng     China   Athletics       NULL
+Yarisley Silva  Cuba    Athletics       NULL
+Sherone Simpson Jamaica Athletics       NULL
+Yelena Sokolova Russia  Athletics       NULL
+Jarrin Solomon  Trinidad and Tobago     Athletics       NULL
+Barbora Špotáková       Czech Republic  Athletics       NULL
+Linda Stahl     Germany Athletics       NULL
+Kerron Stewart  Jamaica Athletics       NULL
+David Storl     Germany Athletics       NULL
+Jenn Stuczynski-Suhr    United States   Athletics       NULL
+Hrystyna Stuy   Ukraine Athletics       NULL
+Leonel Suárez   Cuba    Athletics       NULL
+Jared Tallent   Australia       Athletics       NULL
+Jeneba Tarmoh   United States   Athletics       NULL
+Angelo Taylor   United States   Athletics       NULL
+Christian Taylor        United States   Athletics       NULL
+Richard Thompson        Trinidad and Tobago     Athletics       NULL
+Michael Tinsley United States   Athletics       NULL
+Ivan Ukhov      Russia  Athletics       NULL
+Keshorn Walcott Trinidad and Tobago     Athletics       NULL
+Wang Zhen       China   Athletics       NULL
+Mitch Watt      Australia       Athletics       NULL
+Warren Weir     Jamaica Athletics       NULL
+Kellie Wells    United States   Athletics       NULL
+Rosemarie Whyte Jamaica Athletics       NULL
+Lauryn Williams United States   Athletics       NULL
+Shericka Williams       Jamaica Athletics       NULL
+Novlene Williams-Mills  Jamaica Athletics       NULL
+Anita Wlodarczyk        Poland  Athletics       NULL
+Yuliya Zaripova Russia  Athletics       NULL
+Mariya Abakumova        Russia  Athletics       NULL
+Valerie Adams-Vili      New Zealand     Athletics       NULL
+Virgilijus Alekna       Lithuania       Athletics       NULL
+Denis Alekseyev Russia  Athletics       NULL
+Olena Antonova  Ukraine Athletics       NULL
+Aaron Armstrong Trinidad and Tobago     Athletics       NULL
+Nobuharu Asahara        Japan   Athletics       NULL
+Mehdi Baala     France  Athletics       NULL
+Dretti Bain     Bahamas Athletics       NULL
+Yarelis Barrios Cuba    Athletics       NULL
+Hasna Benhassi  Morocco Athletics       NULL
+Keston Bledman  Trinidad and Tobago     Athletics       NULL
+Valeriy Borchin Russia  Athletics       NULL
+Olivia Borlée   Belgium Athletics       NULL
+Chris Brown     Bahamas Athletics       NULL
+Stephanie Brown-Trafton United States   Athletics       NULL
+Wilfred Bungei  Kenya   Athletics       NULL
+Marc Burns      Trinidad and Tobago     Athletics       NULL
+Emmanuel Callender      Trinidad and Tobago     Athletics       NULL
+Ibrahim Camejo  Cuba    Athletics       NULL
+Veronica Campbell-Brown Jamaica Athletics       NULL
+Christian Cantwell      United States   Athletics       NULL
+Nesta Carter    Jamaica Athletics       NULL
+Yuliya Chermoshanskaya  Russia  Athletics       NULL
+Tatyana Chernova        Russia  Athletics       NULL
+Anna Chicherova Russia  Athletics       NULL
+Bryan Clay      United States   Athletics       NULL
+Shawn Crawford  United States   Athletics       NULL
+Tasha Danvers   Great Britain   Athletics       NULL
+Meseret Defar   Ethiopia        Athletics       NULL
+Pigi Devetzi    Greece  Athletics       NULL
+Vadim Devyatovsky       Belarus Athletics       NULL
+Constantina Dita-Tomescu        Romania Athletics       NULL
+Nataliya Dobrynska      Ukraine Athletics       NULL
+Maksim Dyldin   Russia  Athletics       NULL
+Nelson Évora    Portugal        Athletics       NULL
+Aleksandra Fedoriva     Russia  Athletics       NULL
+Svetlana Feofanova      Russia  Athletics       NULL
+Tatyana Firova  Russia  Athletics       NULL
+Shalane Flanagan        United States   Athletics       NULL
+Hyleas Fountain United States   Athletics       NULL
+Shelly-Ann Fraser-Pryce Jamaica Athletics       NULL
+Michael Frater  Jamaica Athletics       NULL
+Vladislav Frolov        Russia  Athletics       NULL
+Kim Gevaert     Belgium Athletics       NULL
+Jaouad Gharib   Morocco Athletics       NULL
+Dawn Harper     United States   Athletics       NULL
+Natasha Hastings        United States   Athletics       NULL
+Tia Hellebaut   Belgium Athletics       NULL
+Monique Henderson       United States   Athletics       NULL
+Steve Hooker    Australia       Athletics       NULL
+Franca Idoko    Nigeria Athletics       NULL
+Phillips Idowu  Great Britain   Athletics       NULL
+Yelena Isinbayeva       Russia  Athletics       NULL
+Ismail Ahmed Ismail     Sudan   Athletics       NULL
+Halimat Ismaila Nigeria Athletics       NULL
+Bershawn Jackson        United States   Athletics       NULL
+Pamela Jelimo   Kenya   Athletics       NULL
+Eunice Jepkorir Kenya   Athletics       NULL
+Janeth Jepkosgei        Kenya   Athletics       NULL
+Sheena Johnson-Tosta    United States   Athletics       NULL
+Olga Kaniskina  Russia  Athletics       NULL
+Gerd Kanter     Estonia Athletics       NULL
+Anastasiya Kapachinskaya        Russia  Athletics       NULL
+Tsegaye Kebede  Ethiopia        Athletics       NULL
+Gloria Kemasoude        Nigeria Athletics       NULL
+Nataliya Khoronenko-Mikhnevich  Belarus Athletics       NULL
+Eliud Kipchoge  Kenya   Athletics       NULL
+Asbel Kiprop    Kenya   Athletics       NULL
+Brimin Kipruto  Kenya   Athletics       NULL
+Micah Kogo      Kenya   Athletics       NULL
+Anton Kokorin   Russia  Athletics       NULL
+Ainars Kovals   Latvia  Athletics       NULL
+Primož Kozmus   Slovenia        Athletics       NULL
+Andrey Kravchenko       Belarus Athletics       NULL
+Nancy Langat    Kenya   Athletics       NULL
+Iryna Lishchynska       Ukraine Athletics       NULL
+Lyudmila Litvinova      Russia  Athletics       NULL
+Shereefa Lloyd  Jamaica Athletics       NULL
+Priscilla Lopes-Schliep Canada  Athletics       NULL
+Yevgeniy Lukyanenko     Russia  Athletics       NULL
+Maurren Maggi   Brazil  Athletics       NULL
+Tomasz Majewski Poland  Athletics       NULL
+Hanna Mariën    Belgium Athletics       NULL
+Germaine Mason  Great Britain   Athletics       NULL
+Richard Mateelong       Kenya   Athletics       NULL
+Michael Mathieu Bahamas Athletics       NULL
+Piotr Malachowski       Poland  Athletics       NULL
+Françoise Mbango        Cameroon        Athletics       NULL
+Sally McLellan-Pearson  Australia       Athletics       NULL
+Mahiedine Mekhissi-Benabbad     France  Athletics       NULL
+Oksana Menkova  Belarus Athletics       NULL
+Yelena Migunova Russia  Athletics       NULL
+Andrey Mikhnevich       Belarus Athletics       NULL
+Ramon Miller    Bahamas Athletics       NULL
+Godfrey Khotso Mokoena  South Africa    Athletics       NULL
+Avard Moncur    Bahamas Athletics       NULL
+Yipsi Moreno    Cuba    Athletics       NULL
+Catherine Ndereba       Kenya   Athletics       NULL
+Denis Nizhegorodov      Russia  Athletics       NULL
+Christina Obergföll     Germany Athletics       NULL
+Christine Ohuruogu      Great Britain   Athletics       NULL
+Blessing Okagbare       Nigeria Athletics       NULL
+David Oliver    United States   Athletics       NULL
+Damola Osayomi  Nigeria Athletics       NULL
+Agnes Osazuwa   Nigeria Athletics       NULL
+Nadezhda Ostapchuk      Belarus Athletics       NULL
+Élodie Ouédraogo        Belgium Athletics       NULL
+David Payne     United States   Athletics       NULL
+Jefferson Pérez Ecuador Athletics       NULL
+Tero Pitkämäki  Finland Athletics       NULL
+Yevgeniya Polyakova     Russia  Athletics       NULL
+Asafa Powell    Jamaica Athletics       NULL
+Elisa Rigaudo   Italy   Athletics       NULL
+Dayron Robles   Cuba    Athletics       NULL
+Yaroslav Rybakov        Russia  Athletics       NULL
+Irving Saladino Panama  Athletics       NULL
+Gulnara Samitova-Galkina        Russia  Athletics       NULL
+Leevan Sands    Bahamas Athletics       NULL
+Alex Schwazer   Italy   Athletics       NULL
+Sileshi Sihine  Ethiopia        Athletics       NULL
+Andrey Silnov   Russia  Athletics       NULL
+Sherone Simpson Jamaica Athletics       NULL
+Edwin Soi       Kenya   Athletics       NULL
+Barbora Špotáková       Czech Republic  Athletics       NULL
+Jenn Stuczynski-Suhr    United States   Athletics       NULL
+Leonel Suárez   Cuba    Athletics       NULL
+Shingo Suetsugu Japan   Athletics       NULL
+Shinji Takahira Japan   Athletics       NULL
+Dwight Thomas   Jamaica Athletics       NULL
+Andreas Thorkildsen     Norway  Athletics       NULL
+Ivan Tikhon     Belarus Athletics       NULL
+Nataliya Tobias Ukraine Athletics       NULL
+Naoki Tsukahara Japan   Athletics       NULL
+Kjersti Tysse-Plätzer   Norway  Athletics       NULL
+Tatyana Veshkurova      Russia  Athletics       NULL
+Blanka Vlašic   Croatia Athletics       NULL
+Yekaterina Volkova      Russia  Athletics       NULL
+Melaine Walker  Jamaica Athletics       NULL
+Sammy Wanjiru   Kenya   Athletics       NULL
+Rosemarie Whyte Jamaica Athletics       NULL
+Bobby-Gaye Wilkins      Jamaica Athletics       NULL
+Andrae Williams Bahamas Athletics       NULL
+Novlene Williams-Mills  Jamaica Athletics       NULL
+Nick Willis     New Zealand     Athletics       NULL
+Mary Wineberg   United States   Athletics       NULL
+Regi Witherspoon        United States   Athletics       NULL
+Alfred Kirwa Yego       Kenya   Athletics       NULL
+Denys Yurchenko Ukraine Athletics       NULL
+Zhang Wenxiu    China   Athletics       NULL
+Zhou Chunxiu    China   Athletics       NULL
+Virgilijus Alekna       Lithuania       Athletics       NULL
+Deji Aliu       Nigeria Athletics       NULL
+Esref Apak      Turkey  Athletics       NULL
+Christine Arron France  Athletics       NULL
+Musa Audu       Nigeria Athletics       NULL
+Jaroslav Bába   Czech Republic  Athletics       NULL
+Aleen Bailey    Jamaica Athletics       NULL
+Stefano Baldini Italy   Athletics       NULL
+Hasna Benhassi  Morocco Athletics       NULL
+Yuriy Bilonoh   Ukraine Athletics       NULL
+Yury Borzakovsky        Russia  Athletics       NULL
+Ivano Brugnetti Italy   Athletics       NULL
+Michelle Burgher        Jamaica Athletics       NULL
+Daniil Burkenya Russia  Athletics       NULL
+Darren Campbell Great Britain   Athletics       NULL
+Jolanda Ceplak  Slovenia        Athletics       NULL
+Maria Cioncan   Romania Athletics       NULL
+Bryan Clay      United States   Athletics       NULL
+Crystal Cox     United States   Athletics       NULL
+Yunaika Crawford        Cuba    Athletics       NULL
+Yumileidi Cumbá Cuba    Athletics       NULL
+Nadia Davy      Jamaica Athletics       NULL
+Vanderlei de Lima       Brazil  Athletics       NULL
+Nathan Deakes   Australia       Athletics       NULL
+Meseret Defar   Ethiopia        Athletics       NULL
+Pigi Devetzi    Greece  Athletics       NULL
+Marlon Devonish Great Britain   Athletics       NULL
+Ejegayehu Dibaba        Ethiopia        Athletics       NULL
+Tirunesh Dibaba Ethiopia        Athletics       NULL
+Deena Drossin-Kastor    United States   Athletics       NULL
+Pat Dwyer       Australia       Athletics       NULL
+Aaron Egbele    Nigeria Athletics       NULL
+Uchenna Emedolu Nigeria Athletics       NULL
+Olusoji Fasuba  Nigeria Athletics       NULL
+Allyson Felix   United States   Athletics       NULL
+Sylviane Félix  France  Athletics       NULL
+Svetlana Feofanova      Russia  Athletics       NULL
+Debbie Ferguson-McKenzie        Bahamas Athletics       NULL
+Francisco Javier Fernández      Spain   Athletics       NULL
+Tatyana Firova  Russia  Athletics       NULL
+Olga Fyodorova  Russia  Athletics       NULL
+Anier García    Cuba    Athletics       NULL
+Jason Gardener  Great Britain   Athletics       NULL
+Giuseppe Gibilisco      Italy   Athletics       NULL
+Ana Guevara     Mexico  Athletics       NULL
+Joanna Hayes    United States   Athletics       NULL
+Matt Hemingway  United States   Athletics       NULL
+Monique Henderson       United States   Athletics       NULL
+Monique Hennagan        United States   Athletics       NULL
+Clinton Hill    Australia       Athletics       NULL
+Stefan Holm     Sweden  Athletics       NULL
+Muriel Hurtis-Houairi   France  Athletics       NULL
+Yelena Isinbayeva       Russia  Athletics       NULL
+Nataliya Ivanova        Russia  Athletics       NULL
+Olimpiada Ivanova       Russia  Athletics       NULL
+Godday James    Nigeria Athletics       NULL
+Dmitry Karpov   Kazakhstan      Athletics       NULL
+Meb Keflezighi  United States   Athletics       NULL
+Naman Keïta     France  Athletics       NULL
+Anastasia Kelesidou     Greece  Athletics       NULL
+Ezekiel Kemboi  Kenya   Athletics       NULL
+Irina Khabarova Russia  Athletics       NULL
+Fani Khalkia    Greece  Athletics       NULL
+Eliud Kipchoge  Kenya   Athletics       NULL
+Wilson Kipketer Denmark Athletics       NULL
+Brimin Kipruto  Kenya   Athletics       NULL
+Nadine Kleinert-Schmitt Germany Athletics       NULL
+Carolina Klüft  Sweden  Athletics       NULL
+Paul Kipsiele Koech     Kenya   Athletics       NULL
+Robert Korzeniowski     Poland  Athletics       NULL
+Tatyana Kotova  Russia  Athletics       NULL
+Zoltán Kovágó   Hungary Athletics       NULL
+Olesya Krasnomovets     Russia  Athletics       NULL
+Svetlana Krivelyova     Russia  Athletics       NULL
+Larisa Kruglova Russia  Athletics       NULL
+Olga Kuzenkova  Russia  Athletics       NULL
+Bernard Lagat   Kenya   Athletics       NULL
+Tayna Lawrence  Jamaica Athletics       NULL
+Mark Lewis-Francis      Great Britain   Athletics       NULL
+Liu Xiang       China   Athletics       NULL
+Tim Mack        United States   Athletics       NULL
+Sergey Makarov  Russia  Athletics       NULL
+Véronique Mang  France  Athletics       NULL
+Mirela Maniani-Tzelili  Greece  Athletics       NULL
+Joan Lino Martínez      Spain   Athletics       NULL
+Françoise Mbango        Cameroon        Athletics       NULL
+Beverly McDonald        Jamaica Athletics       NULL
+Danny McFarlane Jamaica Athletics       NULL
+Osleidys Menéndez       Cuba    Athletics       NULL
+Coby Miller     United States   Athletics       NULL
+John Moffitt    United States   Athletics       NULL
+Yipsi Moreno    Cuba    Athletics       NULL
+Melissa Morrison        United States   Athletics       NULL
+Mbulaeni Mulaudzi       South Africa    Athletics       NULL
+Koji Murofushi  Japan   Athletics       NULL
+Nataliya Nazarova       Russia  Athletics       NULL
+Catherine Ndereba       Kenya   Athletics       NULL
+Adam Nelson     United States   Athletics       NULL
+Steffi Nerius   Germany Athletics       NULL
+Yuliya Nesterenko       Belarus Athletics       NULL
+Denis Nizhegorodov      Russia  Athletics       NULL
+Mizuki Noguchi  Japan   Athletics       NULL
+Francis Obikwelu        Portugal        Athletics       NULL
+Isabella Ochichi        Kenya   Athletics       NULL
+Joachim Olsen   Denmark Athletics       NULL
+Christian Olsson        Sweden  Athletics       NULL
+Marian Oprea    Romania Athletics       NULL
+Mark Ormrod     Australia       Athletics       NULL
+Olena Ovcharova-Krasovska       Ukraine Athletics       NULL
+Darvis Patton   United States   Athletics       NULL
+Dwight Phillips United States   Athletics       NULL
+Sandie Richards Jamaica Athletics       NULL
+Sanya Richards-Ross     United States   Athletics       NULL
+Moushaumi Robinson      United States   Athletics       NULL
+Andrew Rock     United States   Athletics       NULL
+Anna Rogowska   Poland  Athletics       NULL
+Nataliya Sadova Russia  Athletics       NULL
+Félix Sánchez   Dominican Republic      Athletics       NULL
+Jane Saville    Australia       Athletics       NULL
+Roman Šebrle    Czech Republic  Athletics       NULL
+Sileshi Sihine  Ethiopia        Athletics       NULL
+Rui Silva       Portugal        Athletics       NULL
+Irina Simagina  Russia  Athletics       NULL
+Sherone Simpson Jamaica Athletics       NULL
+Austra Skujyte  Lithuania       Athletics       NULL
+Yelena Slesarenko       Russia  Athletics       NULL
+Ronetta Smith   Jamaica Athletics       NULL
+Kelly Sotherton Great Britain   Athletics       NULL
+John Steffensen Australia       Athletics       NULL
+Toby Stevenson  United States   Athletics       NULL
+Vita Stopina    Ukraine Athletics       NULL
+Hestrie Storbeck-Cloete South Africa    Athletics       NULL
+Yuliya Tabakova Russia  Athletics       NULL
+Zersenay Tadesse        Eritrea Athletics       NULL
+Aleksander Tammert      Estonia Athletics       NULL
+Ionela Târlea-Manolache Romania Athletics       NULL
+Tetiana Tereshchuk-Antypova     Ukraine Athletics       NULL
+Andreas Thorkildsen     Norway  Athletics       NULL
+Ivan Tikhon     Belarus Athletics       NULL
+Tatyana Tomashova       Russia  Athletics       NULL
+Terrence Trammell       United States   Athletics       NULL
+DeeDee Trotter  United States   Athletics       NULL
+Athanasia Tsoumeleka    Greece  Athletics       NULL
+Derartu Tulu    Ethiopia        Athletics       NULL
+Enefiok Udo-Obong       Nigeria Athletics       NULL
+Vadims Vasilevskis      Latvia  Athletics       NULL
+Aleksey Voyevodin       Russia  Athletics       NULL
+Saul Weigopwa   Nigeria Athletics       NULL
+Bernard Williams III    United States   Athletics       NULL
+Lauryn Williams United States   Athletics       NULL
+Tonique Williams-Darling        Bahamas Athletics       NULL
+Novlene Williams-Mills  Jamaica Athletics       NULL
+Darold Williamson       United States   Athletics       NULL
+Kelly Willie    United States   Athletics       NULL
+Xing Huina      China   Athletics       NULL
+Irina Yatchenko Belarus Athletics       NULL
+Olesya Zykina   Russia  Athletics       NULL
+Gezahgne Abera  Ethiopia        Athletics       NULL
+Hadi Soua'an Al-Somaily Saudi Arabia    Athletics       NULL
+Virgilijus Alekna       Lithuania       Athletics       NULL
+Glory Alozie    Nigeria Athletics       NULL
+Andrea Anderson United States   Athletics       NULL
+Vladimir Andreyev       Russia  Athletics       NULL
+Igor Astapkovich        Belarus Athletics       NULL
+Nduka Awazie    Nigeria Athletics       NULL
+Sanjay Ayre     Jamaica Athletics       NULL
+Steve Backley   Great Britain   Athletics       NULL
+Sunday Bada     Nigeria Athletics       NULL
+Violeta Beclea-Szekely  Romania Athletics       NULL
+Kajsa Bergqvist Sweden  Athletics       NULL
+Nezha Bidouane  Morocco Athletics       NULL
+Michael Blackwood       Jamaica Athletics       NULL
+Wilson Boit Kipketer    Kenya   Athletics       NULL
+Kenny Brokenburr        United States   Athletics       NULL
+Chris Brown     Bahamas Athletics       NULL
+Michelle Burgher        Jamaica Athletics       NULL
+Darren Campbell Great Britain   Athletics       NULL
+Veronica Campbell-Brown Jamaica Athletics       NULL
+José A. César   Cuba    Athletics       NULL
+Joyce Chepchumba        Kenya   Athletics       NULL
+Clement Chukwu  Nigeria Athletics       NULL
+Eldece Clarke-Lewis     Bahamas Athletics       NULL
+LaTasha Colander-Richardson     United States   Athletics       NULL
+Mark Crear      United States   Athletics       NULL
+André da Silva  Brazil  Athletics       NULL
+Claudinei da Silva      Brazil  Athletics       NULL
+Stacy Dragila   United States   Athletics       NULL
+Heike Drechsler Germany Athletics       NULL
+Jon Drummond    United States   Athletics       NULL
+Jonathan Edwards        Great Britain   Athletics       NULL
+Torri Edwards   United States   Athletics       NULL
+Hicham El Guerrouj      Morocco Athletics       NULL
+Ali Ezzine      Morocco Athletics       NULL
+Aigars Fadejevs Latvia  Athletics       NULL
+Debbie Ferguson-McKenzie        Bahamas Athletics       NULL
+Vala Flosadóttir        Iceland Athletics       NULL
+Merlene Frazer  Jamaica Athletics       NULL
+Cathy Freeman   Australia       Athletics       NULL
+Sevatheda Fynes Bahamas Athletics       NULL
+Fidelis Gadzama Nigeria Athletics       NULL
+Chryste Gaines  United States   Athletics       NULL
+Anier García    Cuba    Athletics       NULL
+Iván García     Cuba    Athletics       NULL
+Yoel García     Cuba    Athletics       NULL
+Haile Gebrselassie      Ethiopia        Athletics       NULL
+John Godina     United States   Athletics       NULL
+Svetlana Goncharenko    Russia  Athletics       NULL
+Steffi Graf     Austria Athletics       NULL
+Tatiana Grigorieva      Australia       Athletics       NULL
+Abderrahmane Hammad     Algeria Athletics       NULL
+Arsi Harju      Finland Athletics       NULL
+Alvin Harrison  United States   Athletics       NULL
+Monique Hennagan        United States   Athletics       NULL
+Llewellyn Herbert       South Africa    Athletics       NULL
+Noé Hernández   Mexico  Athletics       NULL
+Kelly Holmes    Great Britain   Athletics       NULL
+Olena Hovorova  Ukraine Athletics       NULL
+Charmaine Howell        Jamaica Athletics       NULL
+Chris Huffins   United States   Athletics       NULL
+Nick Hysong     United States   Athletics       NULL
+Susanthika Jayasinghe   Sri Lanka       Athletics       NULL
+Lawrence Johnson        United States   Athletics       NULL
+Michael Johnson United States   Athletics       NULL
+Marion Jones    United States   Athletics       NULL
+Denis Kapustin  Russia  Athletics       NULL
+Anastasia Kelesidou     Greece  Athletics       NULL
+Kostas Kenteris Greece  Athletics       NULL
+Wilson Kipketer Denmark Athletics       NULL
+Sergey Klyugin  Russia  Athletics       NULL
+Reuben Kosgei   Kenya   Athletics       NULL
+Olga Kotlyarova Russia  Athletics       NULL
+Tatyana Kotova  Russia  Athletics       NULL
+Frantz Kruger   South Africa    Athletics       NULL
+Astrid Kumbernuss       Germany Athletics       NULL
+Olga Kuzenkova  Russia  Athletics       NULL
+Bernard Lagat   Kenya   Athletics       NULL
+Brahim Lahlafi  Morocco Athletics       NULL
+Tatyana Lebedeva        Russia  Athletics       NULL
+Brian Lewis     United States   Athletics       NULL
+Denise Lewis    Great Britain   Athletics       NULL
+Vicente Lima    Brazil  Athletics       NULL
+Sergey Makarov  Russia  Athletics       NULL
+Mirela Maniani-Tzelili  Greece  Athletics       NULL
+Tereza Marinova Bulgaria        Athletics       NULL
+Fiona May       Italy   Athletics       NULL
+Freddy Mayola   Cuba    Athletics       NULL
+Michael McDonald        Jamaica Athletics       NULL
+Danny McFarlane Jamaica Athletics       NULL
+Troy McIntosh   Bahamas Athletics       NULL
+Osleidys Menéndez       Cuba    Athletics       NULL
+Noria Mérah-Benida      Algeria Athletics       NULL
+Katharine Merry Great Britain   Athletics       NULL
+Assefa Mezegebu Ethiopia        Athletics       NULL
+Jearl Miles-Clark       United States   Athletics       NULL
+Avard Moncur    Bahamas Athletics       NULL
+Tim Montgomery  United States   Athletics       NULL
+Jude Monye      Nigeria Athletics       NULL
+Melissa Morrison        United States   Athletics       NULL
+Kirsten Münchow Germany Athletics       NULL
+Tim Munnings    Bahamas Athletics       NULL
+Oana Musunoi-Pantelimon Romania Athletics       NULL
+Maria Mutola    Mozambique      Athletics       NULL
+Nataliya Nazarova       Russia  Athletics       NULL
+Adam Nelson     United States   Athletics       NULL
+Noah Ngeny      Kenya   Athletics       NULL
+Erki Nool       Estonia Athletics       NULL
+Sonia O'Sullivan        Ireland Athletics       NULL
+Carl Oliver     Bahamas Athletics       NULL
+Iván Pedroso    Cuba    Athletics       NULL
+Larisa Peleshenko       Russia  Athletics       NULL
+Luis Alberto Pérez      Cuba    Athletics       NULL
+Nanceen Perry   United States   Athletics       NULL
+Catherine Pomales-Scott Jamaica Athletics       NULL
+Yelena Prokhorova       Russia  Athletics       NULL
+Yanina Provalinskaya-Karolchik  Belarus Athletics       NULL
+Edson Ribeiro   Brazil  Athletics       NULL
+Fernanda Ribeiro        Portugal        Athletics       NULL
+Sandie Richards Jamaica Athletics       NULL
+Passion Richardson      United States   Athletics       NULL
+Lars Riedel     Germany Athletics       NULL
+Djabir Saïd-Guerni      Algeria Athletics       NULL
+Ali Saïdi-Sief  Algeria Athletics       NULL
+Joel Sánchez    Mexico  Athletics       NULL
+Natasha Sazanovich      Belarus Athletics       NULL
+Nils Schumann   Germany Athletics       NULL
+Roman Šebrle    Czech Republic  Athletics       NULL
+Roman Shchurenko        Ukraine Athletics       NULL
+Olga Shishigina Kazakhstan      Athletics       NULL
+Lidia Simon     Romania Athletics       NULL
+Kamila Skolimowska      Poland  Athletics       NULL
+Trine Solberg-Hattestad Norway  Athletics       NULL
+Yuliya Sotnikova        Russia  Athletics       NULL
+Javier Sotomayor        Cuba    Athletics       NULL
+Cláudio Sousa   Brazil  Athletics       NULL
+Hestrie Storbeck-Cloete South Africa    Athletics       NULL
+Chandra Sturrup Bahamas Athletics       NULL
+Naoko Takahashi Japan   Athletics       NULL
+Maksim Tarasov  Russia  Athletics       NULL
+Jai Taurima     Australia       Athletics       NULL
+Angelo Taylor   United States   Athletics       NULL
+Paul Tergat     Kenya   Athletics       NULL
+Aikaterini Thanou       Greece  Athletics       NULL
+Obadele Thompson        Barbados        Athletics       NULL
+Tesfaye Tola    Ethiopia        Athletics       NULL
+Terrence Trammell       United States   Athletics       NULL
+Derartu Tulu    Ethiopia        Athletics       NULL
+Kjersti Tysse-Plätzer   Norway  Athletics       NULL
+Enefiok Udo-Obong       Nigeria Athletics       NULL
+María Vascó     Spain   Athletics       NULL
+Nicola Vizzoni  Italy   Athletics       NULL
+Eric Wainaina   Kenya   Athletics       NULL
+Wang Liping     China   Athletics       NULL
+Bernard Williams III    United States   Athletics       NULL
+Chris Williams  Jamaica Athletics       NULL
+Million Wolde   Ethiopia        Athletics       NULL
+Irina Yatchenko Belarus Athletics       NULL
+Yelena Yelesina Russia  Athletics       NULL
+Jan Železný     Czech Republic  Athletics       NULL
+Szymon Ziólkowski       Poland  Athletics       NULL
+Ellina Zvereva  Belarus Athletics       NULL
+Olesya Zykina   Russia  Athletics       NULL
+Didier Défago   Switzerland     Alpine Skiing   NULL
+Andrea Fischbacher      Austria Alpine Skiing   NULL
+Carlo Janka     Switzerland     Alpine Skiing   NULL
+Kjetil Jansrud  Norway  Alpine Skiing   NULL
+André Myhrer    Sweden  Alpine Skiing   NULL
+Anja Pärson     Sweden  Alpine Skiing   NULL
+Giuliano Razzoli        Italy   Alpine Skiing   NULL
+Viktoria Rebensburg     Germany Alpine Skiing   NULL
+Marlies Schild  Austria Alpine Skiing   NULL
+Andrew Weibrecht        United States   Alpine Skiing   NULL
+Šárka Záhrobská Czech Republic  Alpine Skiing   NULL
+Silvan Zurbriggen       Switzerland     Alpine Skiing   NULL
+Kjetil André Aamodt     Norway  Alpine Skiing   NULL
+Joël Chenal     France  Alpine Skiing   NULL
+Antoine Dénériaz        France  Alpine Skiing   NULL
+Reinfried Herbst        Austria Alpine Skiing   NULL
+Ambrosi Hoffmann        Switzerland     Alpine Skiing   NULL
+Nicole Hosp     Austria Alpine Skiing   NULL
+Bruno Kernen    Switzerland     Alpine Skiing   NULL
+Ivica Kostelic  Croatia Alpine Skiing   NULL
+Ted Ligety      United States   Alpine Skiing   NULL
+Julia Mancuso   United States   Alpine Skiing   NULL
+Alexandra Meissnitzer   Austria Alpine Skiing   NULL
+Anna Ottosson   Sweden  Alpine Skiing   NULL
+Tanja Poutiainen        Finland Alpine Skiing   NULL
+Martina Schild  Switzerland     Alpine Skiing   NULL
+Michael Walchhofer      Austria Alpine Skiing   NULL
+Sébastien Amiez France  Alpine Skiing   NULL
+Daniela Ceccarelli      Italy   Alpine Skiing   NULL
+Martina Ertl-Renz       Germany Alpine Skiing   NULL
+Isolde Kostner  Italy   Alpine Skiing   NULL
+Carole Montillet-Carles France  Alpine Skiing   NULL
+Sonja Nef       Switzerland     Alpine Skiing   NULL
+Laure Pequegnot France  Alpine Skiing   NULL
+Karen Putzer    Italy   Alpine Skiing   NULL
+Andreas Schifferer      Austria Alpine Skiing   NULL
+Fritz Strobl    Austria Alpine Skiing   NULL
+Jean-Pierre Vidal       France  Alpine Skiing   NULL
+Mariana Avitia  Mexico  Archery NULL
+Cheng Ming      China   Archery NULL
+Choi Hyeon-Ju   South Korea     Archery NULL
+Dai Xiaoxiang   China   Archery NULL
+Brady Ellison   United States   Archery NULL
+Fang Yuting     China   Archery NULL
+Michele Frangilli       Italy   Archery NULL
+Takaharu Furukawa       Japan   Archery NULL
+Marco Galiazzo  Italy   Archery NULL
+Ren Hayakawa    Japan   Archery NULL
+Im Dong-Hyeon   South Korea     Archery NULL
+Jake Kaminski   United States   Archery NULL
+Miki Kanie      Japan   Archery NULL
+Kaori Kawanaka  Japan   Archery NULL
+Kim Bub-Min     South Korea     Archery NULL
+Lee Seong-Jin   South Korea     Archery NULL
+Mauro Nespoli   Italy   Archery NULL
+Aída Román      Mexico  Archery NULL
+Jacob Wukie     United States   Archery NULL
+Xu Jing China   Archery NULL
+Virginie Arnold France  Archery NULL
+Bair Badyonov   Russia  Archery NULL
+Chen Ling       China   Archery NULL
+Ilario Di Buò   Italy   Archery NULL
+Sophie Dodémont France  Archery NULL
+Marco Galiazzo  Italy   Archery NULL
+Guo Dan China   Archery NULL
+Im Dong-Hyeon   South Korea     Archery NULL
+Jiang Lin       China   Archery NULL
+Joo Hyun-Jung   South Korea     Archery NULL
+Lee Chang-Hwan  South Korea     Archery NULL
+Li Wenquan      China   Archery NULL
+Mauro Nespoli   Italy   Archery NULL
+Viktor Ruban    Ukraine Archery NULL
+Bérengère Schuh France  Archery NULL
+Xue Haifeng     China   Archery NULL
+Chen Li-Ju      Chinese Taipei  Archery NULL
+Chen Szu-Yuan   Chinese Taipei  Archery NULL
+Tim Cuddihy     Australia       Archery NULL
+Marco Galiazzo  Italy   Archery NULL
+He Ying China   Archery NULL
+Dmytro Hrachov  Ukraine Archery NULL
+Im Dong-Hyeon   South Korea     Archery NULL
+Jang Yong-Ho    South Korea     Archery NULL
+Lin Sang        China   Archery NULL
+Liu Ming-Huang  Chinese Taipei  Archery NULL
+Park Gyeong-Mo  South Korea     Archery NULL
+Viktor Ruban    Ukraine Archery NULL
+Oleksandr Serdiuk       Ukraine Archery NULL
+Wang Cheng-Pang Chinese Taipei  Archery NULL
+Alison Williamson       Great Britain   Archery NULL
+Wu Hui-Ju       Chinese Taipei  Archery NULL
+Hiroshi Yamamoto        Japan   Archery NULL
+Yuan Shu-Chi    Chinese Taipei  Archery NULL
+Yun Mi-Jin      South Korea     Archery NULL
+Zhang Juanjuan  China   Archery NULL
+Matteo Bisiani  Italy   Archery NULL
+Nataliya Burdeina       Ukraine Archery NULL
+Ilario Di Buò   Italy   Archery NULL
+Simon Fairweather       Australia       Archery NULL
+Michele Frangilli       Italy   Archery NULL
+Jang Yong-Ho    South Korea     Archery NULL
+Butch Johnson   United States   Archery NULL
+Kim Cheong-Tae  South Korea     Archery NULL
+Barbara Mensing Germany Archery NULL
+O Gyo-Mun       South Korea     Archery NULL
+Cornelia Pfohl  Germany Archery NULL
+Olena Sadovnycha        Ukraine Archery NULL
+Kateryna Serdiuk        Ukraine Archery NULL
+Wietse van Alten        Netherlands     Archery NULL
+Sandra Wagner-Sachse    Germany Archery NULL
+Rod White       United States   Archery NULL
+Time taken: 0.145 seconds, Fetched: 8618 row(s)
+hive> select country , tm  from olympic where sport = 'swimming';
+OK
+Time taken: 0.234 seconds
+hive> select country , tm  from olympic where sport = 'Swimming';
+OK
+United States   8
+United States   8
+United States   6
+United States   6
+Australia       5
+United States   5
+United States   5
+United States   5
+United States   5
+Australia       5
+United States   5
+China   4
+Zimbabwe        4
+Australia       4
+United States   4
+Netherlands     4
+Australia       4
+Australia       4
+Netherlands     4
+United States   4
+Australia       4
+Australia       4
+United States   4
+Netherlands     4
+United States   3
+France  3
+Australia       3
+United States   3
+Japan   3
+United States   3
+Netherlands     3
+France  3
+Australia       3
+Australia       3
+United States   3
+Japan   3
+United States   3
+France  3
+Hungary 3
+United States   3
+United States   3
+United States   3
+Australia       3
+Japan   3
+Australia       3
+United States   3
+China   3
+United States   3
+Australia       3
+Australia       3
+United States   3
+Australia       3
+United States   3
+United States   3
+Germany 3
+Zimbabwe        3
+United States   3
+Australia       3
+United States   3
+Australia       3
+Poland  3
+Australia       3
+Japan   3
+France  3
+United States   3
+United States   3
+South Africa    3
+Netherlands     3
+Sweden  3
+Ukraine 3
+United States   3
+Italy   3
+Australia       3
+Australia       3
+Great Britain   2
+Australia       2
+United States   2
+Spain   2
+United States   2
+Belarus 2
+United States   2
+United States   2
+South Africa    2
+France  2
+France  2
+Australia       2
+Japan   2
+Tunisia 2
+South Korea     2
+Australia       2
+France  2
+Japan   2
+United States   2
+Netherlands     2
+China   2
+Great Britain   2
+Australia       2
+Australia       2
+Brazil  2
+France  2
+Australia       2
+Australia       2
+United States   2
+France  2
+United States   2
+Australia       2
+South Korea     2
+Australia       2
+Australia       2
+Australia       2
+United States   2
+Germany 2
+Australia       2
+Australia       2
+United States   2
+Russia  2
+United States   2
+United States   2
+United States   2
+Australia       2
+United States   2
+United States   2
+Ukraine 2
+United States   2
+Australia       2
+United States   2
+United States   2
+Australia       2
+Japan   2
+Austria 2
+United States   2
+Germany 2
+United States   2
+United States   2
+Japan   2
+United States   2
+Romania 2
+United States   2
+United States   2
+United States   2
+Italy   2
+Australia       2
+Australia       2
+Australia       2
+United States   2
+United States   2
+Romania 2
+Slovakia        2
+United States   2
+United States   2
+Japan   2
+Australia       2
+Australia       2
+Costa Rica      2
+United States   2
+Australia       2
+United States   2
+United States   2
+Germany 2
+United States   2
+United States   2
+United States   1
+United States   1
+Australia       1
+France  1
+France  1
+France  1
+United States   1
+Australia       1
+Brazil  1
+United States   1
+Canada  1
+United States   1
+Hungary 1
+Australia       1
+China   1
+Netherlands     1
+United States   1
+United States   1
+France  1
+Australia       1
+France  1
+United States   1
+Russia  1
+Japan   1
+France  1
+Russia  1
+Italy   1
+Hungary 1
+Japan   1
+China   1
+Canada  1
+Netherlands     1
+Japan   1
+United States   1
+Russia  1
+Great Britain   1
+China   1
+China   1
+Australia       1
+Japan   1
+Japan   1
+Russia  1
+Australia       1
+Russia  1
+United States   1
+France  1
+United States   1
+Australia       1
+United States   1
+United States   1
+China   1
+China   1
+Russia  1
+China   1
+China   1
+Germany 1
+France  1
+France  1
+United States   1
+United States   1
+Lithuania       1
+Russia  1
+United States   1
+Australia       1
+Australia       1
+United States   1
+Brazil  1
+Australia       1
+Hungary 1
+Netherlands     1
+United States   1
+Australia       1
+China   1
+Australia       1
+United States   1
+Japan   1
+Japan   1
+South Africa    1
+United States   1
+United States   1
+Canada  1
+United States   1
+Russia  1
+Russia  1
+United States   1
+Australia       1
+Australia       1
+United States   1
+France  1
+United States   1
+Australia       1
+United States   1
+Australia       1
+Serbia  1
+Canada  1
+United States   1
+Australia       1
+Great Britain   1
+Netherlands     1
+Australia       1
+Australia       1
+Italy   1
+Denmark 1
+Japan   1
+United States   1
+France  1
+United States   1
+Netherlands     1
+Russia  1
+Slovenia        1
+Russia  1
+Great Britain   1
+United States   1
+China   1
+United States   1
+Austria 1
+United States   1
+Netherlands     1
+Russia  1
+China   1
+Russia  1
+Germany 1
+Australia       1
+France  1
+United States   1
+Japan   1
+Tunisia 1
+Australia       1
+Japan   1
+Japan   1
+Norway  1
+United States   1
+Norway  1
+Australia       1
+Australia       1
+Great Britain   1
+Great Britain   1
+Italy   1
+Australia       1
+Russia  1
+United States   1
+Japan   1
+United States   1
+Netherlands     1
+Australia       1
+United States   1
+Australia       1
+France  1
+Russia  1
+China   1
+China   1
+China   1
+Netherlands     1
+Netherlands     1
+United States   1
+Netherlands     1
+United States   1
+United States   1
+Australia       1
+United States   1
+China   1
+China   1
+China   1
+China   1
+China   1
+China   1
+Argentina       1
+Trinidad and Tobago     1
+Italy   1
+Italy   1
+Italy   1
+Germany 1
+United States   1
+United States   1
+Hungary 1
+Germany 1
+Great Britain   1
+Netherlands     1
+Croatia 1
+Germany 1
+France  1
+United States   1
+South Africa    1
+France  1
+Romania 1
+United States   1
+United States   1
+Germany 1
+Germany 1
+Netherlands     1
+Hungary 1
+Germany 1
+United States   1
+United States   1
+Netherlands     1
+United States   1
+United States   1
+Australia       1
+Russia  1
+Netherlands     1
+United States   1
+Germany 1
+United States   1
+China   1
+China   1
+Italy   1
+Australia       1
+Germany 1
+France  1
+United States   1
+Japan   1
+Japan   1
+South Africa    1
+Japan   1
+China   1
+Great Britain   1
+Australia       1
+Italy   1
+Italy   1
+United States   1
+Germany 1
+Germany 1
+Romania 1
+Australia       1
+Italy   1
+Germany 1
+Australia       1
+Australia       1
+Ukraine 1
+Japan   1
+Australia       1
+Australia       1
+Germany 1
+South Africa    1
+United States   1
+Netherlands     1
+Netherlands     1
+United States   1
+United States   1
+United States   1
+China   1
+China   1
+Netherlands     1
+China   1
+Netherlands     1
+United States   1
+United States   1
+United States   1
+United States   1
+United States   1
+Brazil  1
+Germany 1
+Australia       1
+Australia       1
+United States   1
+United States   1
+United States   1
+Germany 1
+Sweden  1
+Australia       1
+United States   1
+Australia       1
+Netherlands     1
+United States   1
+Australia       1
+Germany 1
+Netherlands     1
+South Africa    1
+United States   1
+Brazil  1
+Sweden  1
+Sweden  1
+Netherlands     1
+Germany 1
+Australia       1
+Hungary 1
+United States   1
+Australia       1
+Germany 1
+Sweden  1
+United States   1
+France  1
+Japan   1
+Australia       1
+Canada  1
+Japan   1
+Australia       1
+Japan   1
+South Africa    1
+United States   1
+Australia       1
+United States   1
+Russia  1
+United States   1
+Italy   1
+Germany 1
+Australia       1
+United States   1
+Brazil  1
+Brazil  1
+Sweden  1
+Russia  1
+Germany 1
+Germany 1
+United States   1
+United States   1
+Sweden  1
+Ukraine 1
+Japan   1
+Japan   1
+United States   1
+United States   1
+Australia       1
+United States   1
+Germany 1
+Netherlands     1
+Australia       1
+Netherlands     1
+Netherlands     1
+United States   1
+Australia       1
+Australia       1
+United States   1
+Netherlands     1
+Spain   1
+Netherlands     1
+Time taken: 0.122 seconds, Fetched: 487 row(s)
+hive> select country , SUM(tm) from olympic where sport = 'Swimming' group by country;
+Query ID = acadgild_20160807094545_94656c3c-464c-49d0-bd95-3a11d3c15a53
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1470540234542_0004, Tracking URL = http://localhost:8088/proxy/application_1470540234542_0004/
+Kill Command = /home/acadgild/hadoop-2.6.0/bin/hadoop job  -kill job_1470540234542_0004
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2016-08-07 09:45:59,203 Stage-1 map = 0%,  reduce = 0%
+2016-08-07 09:46:12,160 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.43 sec
+2016-08-07 09:46:24,312 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 4.16 sec
+MapReduce Total cumulative CPU time: 4 seconds 160 msec
+Ended Job = job_1470540234542_0004
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 4.16 sec   HDFS Read: 518889 HDFS Write: 386 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 160 msec
+OK
+Argentina       1
+Australia       163
+Austria 3
+Belarus 2
+Brazil  8
+Canada  5
+China   35
+Costa Rica      2
+Croatia 1
+Denmark 1
+France  39
+Germany 32
+Great Britain   11
+Hungary 9
+Italy   16
+Japan   43
+Lithuania       1
+Netherlands     46
+Norway  2
+Poland  3
+Romania 6
+Russia  20
+Serbia  1
+Slovakia        2
+Slovenia        1
+South Africa    11
+South Korea     4
+Spain   3
+Sweden  9
+Trinidad and Tobago     1
+Tunisia 3
+Ukraine 7
+United States   267
+Zimbabwe        7
+Time taken: 41.176 seconds, Fetched: 34 row(s)
+hive> hive> select country , SUM(tm) from olympic where country = 'India' group by country;
+NoViableAltException(26@[])
+        at org.apache.hadoop.hive.ql.parse.HiveParser.statement(HiveParser.java:1015)
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:199)
+        at org.apache.hadoop.hive.ql.parse.ParseDriver.parse(ParseDriver.java:166)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:389)
+        at org.apache.hadoop.hive.ql.Driver.compile(Driver.java:303)
+        at org.apache.hadoop.hive.ql.Driver.compileInternal(Driver.java:1067)
+        at org.apache.hadoop.hive.ql.Driver.runInternal(Driver.java:1129)
+        at org.apache.hadoop.hive.ql.Driver.run(Driver.java:1004)
+        at org.apache.hadoop.hive.ql.Driver.run(Driver.java:994)
+        at org.apache.hadoop.hive.cli.CliDriver.processLocalCmd(CliDriver.java:247)
+        at org.apache.hadoop.hive.cli.CliDriver.processCmd(CliDriver.java:199)
+        at org.apache.hadoop.hive.cli.CliDriver.processLine(CliDriver.java:410)
+        at org.apache.hadoop.hive.cli.CliDriver.executeDriver(CliDriver.java:783)
+        at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:677)
+        at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:616)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:497)
+        at org.apache.hadoop.util.RunJar.run(RunJar.java:221)
+        at org.apache.hadoop.util.RunJar.main(RunJar.java:136)
+FAILED: ParseException line 1:0 cannot recognize input near 'hive' '>' 'select'
+hive> select country , SUM(tm) from olympic where country = 'India' group by country;
+Query ID = acadgild_20160807094747_ef0189bb-4130-4f2f-bd25-458936152b43
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1470540234542_0005, Tracking URL = http://localhost:8088/proxy/application_1470540234542_0005/
+Kill Command = /home/acadgild/hadoop-2.6.0/bin/hadoop job  -kill job_1470540234542_0005
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2016-08-07 09:48:10,855 Stage-1 map = 0%,  reduce = 0%
+2016-08-07 09:48:21,338 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.62 sec
+2016-08-07 09:48:31,863 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 4.32 sec
+MapReduce Total cumulative CPU time: 4 seconds 320 msec
+Ended Job = job_1470540234542_0005
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 4.32 sec   HDFS Read: 518889 HDFS Write: 9 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 320 msec
+OK
+India   11
+Time taken: 33.7 seconds, Fetched: 1 row(s)
+hive> select year  , SUM(tm) from olympic where country = 'India' group by year;
+Query ID = acadgild_20160807094949_16ede7b8-ca18-4a74-900e-fef78512c3e7
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1470540234542_0006, Tracking URL = http://localhost:8088/proxy/application_1470540234542_0006/
+Kill Command = /home/acadgild/hadoop-2.6.0/bin/hadoop job  -kill job_1470540234542_0006
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2016-08-07 09:49:27,586 Stage-1 map = 0%,  reduce = 0%
+2016-08-07 09:49:39,438 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 2.37 sec
+2016-08-07 09:49:48,286 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 4.08 sec
+MapReduce Total cumulative CPU time: 4 seconds 80 msec
+Ended Job = job_1470540234542_0006
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 4.08 sec   HDFS Read: 518889 HDFS Write: 28 SUCCESS
+Total MapReduce CPU Time Spent: 4 seconds 80 msec
+OK
+2000    1
+2004    1
+2008    3
+2012    6
+Time taken: 32.724 seconds, Fetched: 4 row(s)
+hive> select country , SUM(tm) from olympic  group by country;
+Query ID = acadgild_20160807095050_d165641e-1d16-48fa-90b1-359156b62124
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1470540234542_0007, Tracking URL = http://localhost:8088/proxy/application_1470540234542_0007/
+Kill Command = /home/acadgild/hadoop-2.6.0/bin/hadoop job  -kill job_1470540234542_0007
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2016-08-07 09:50:35,664 Stage-1 map = 0%,  reduce = 0%
+2016-08-07 09:50:44,445 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.49 sec
+2016-08-07 09:50:53,189 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.15 sec
+MapReduce Total cumulative CPU time: 3 seconds 150 msec
+Ended Job = job_1470540234542_0007
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.15 sec   HDFS Read: 518889 HDFS Write: 1315 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 150 msec
+OK
+Afghanistan     2
+Algeria 8
+Argentina       141
+Armenia 10
+Australia       609
+Austria 91
+Azerbaijan      25
+Bahamas 24
+Bahrain 1
+Barbados        1
+Belarus 97
+Belgium 18
+Botswana        1
+Brazil  221
+Bulgaria        41
+Cameroon        20
+Canada  370
+Chile   22
+China   530
+Chinese Taipei  20
+Colombia        13
+Costa Rica      2
+Croatia 81
+Cuba    188
+Cyprus  1
+Czech Republic  81
+Denmark 89
+Dominican Republic      5
+Ecuador 1
+Egypt   8
+Eritrea 1
+Estonia 18
+Ethiopia        29
+Finland 118
+France  318
+Gabon   1
+Georgia 23
+Germany 629
+Great Britain   322
+Greece  59
+Grenada 1
+Guatemala       1
+Hong Kong       3
+Hungary 145
+Iceland 15
+India   11
+Indonesia       22
+Iran    24
+Ireland 9
+Israel  4
+Italy   331
+Jamaica 80
+Japan   282
+Kazakhstan      42
+Kenya   39
+Kuwait  2
+Kyrgyzstan      3
+Latvia  17
+Lithuania       30
+Macedonia       1
+Malaysia        3
+Mauritius       1
+Mexico  38
+Moldova 5
+Mongolia        10
+Montenegro      14
+Morocco 11
+Mozambique      1
+Netherlands     318
+New Zealand     52
+Nigeria 39
+North Korea     21
+Norway  192
+Panama  1
+Paraguay        17
+Poland  80
+Portugal        9
+Puerto Rico     2
+Qatar   3
+Romania 123
+Russia  768
+Saudi Arabia    6
+Serbia  31
+Serbia and Montenegro   38
+Singapore       7
+Slovakia        35
+Slovenia        25
+South Africa    25
+South Korea     308
+Spain   205
+Sri Lanka       1
+Sudan   1
+Sweden  181
+Switzerland     93
+Syria   1
+Tajikistan      3
+Thailand        18
+Togo    1
+Trinidad and Tobago     19
+Tunisia 4
+Turkey  28
+Uganda  1
+Ukraine 143
+United Arab Emirates    1
+United States   1312
+Uruguay 1
+Uzbekistan      19
+Venezuela       4
+Vietnam 2
+Zimbabwe        7
+Time taken: 28.474 seconds, Fetched: 110 row(s)
+hive> select country , SUM(gm) from olympic  group by country;
+Query ID = acadgild_20160807095050_4c0c6823-6fc6-47e7-99bb-e1959639514d
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1470540234542_0008, Tracking URL = http://localhost:8088/proxy/application_1470540234542_0008/
+Kill Command = /home/acadgild/hadoop-2.6.0/bin/hadoop job  -kill job_1470540234542_0008
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2016-08-07 09:51:08,056 Stage-1 map = 0%,  reduce = 0%
+2016-08-07 09:51:15,754 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.48 sec
+2016-08-07 09:51:26,628 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.04 sec
+MapReduce Total cumulative CPU time: 3 seconds 40 msec
+Ended Job = job_1470540234542_0008
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.04 sec   HDFS Read: 518889 HDFS Write: 1276 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 40 msec
+OK
+Afghanistan     0
+Algeria 2
+Argentina       49
+Armenia 0
+Australia       163
+Austria 36
+Azerbaijan      6
+Bahamas 11
+Bahrain 0
+Barbados        0
+Belarus 17
+Belgium 2
+Botswana        0
+Brazil  46
+Bulgaria        8
+Cameroon        20
+Canada  168
+Chile   3
+China   234
+Chinese Taipei  2
+Colombia        2
+Costa Rica      0
+Croatia 35
+Cuba    57
+Cyprus  0
+Czech Republic  14
+Denmark 46
+Dominican Republic      3
+Ecuador 0
+Egypt   1
+Eritrea 0
+Estonia 6
+Ethiopia        13
+Finland 11
+France  108
+Gabon   0
+Georgia 6
+Germany 223
+Great Britain   124
+Greece  12
+Grenada 1
+Guatemala       0
+Hong Kong       0
+Hungary 77
+Iceland 0
+India   1
+Indonesia       5
+Iran    10
+Ireland 1
+Israel  1
+Italy   86
+Jamaica 24
+Japan   57
+Kazakhstan      13
+Kenya   11
+Kuwait  0
+Kyrgyzstan      0
+Latvia  3
+Lithuania       5
+Macedonia       0
+Malaysia        0
+Mauritius       0
+Mexico  19
+Moldova 0
+Mongolia        2
+Montenegro      0
+Morocco 2
+Mozambique      1
+Netherlands     101
+New Zealand     18
+Nigeria 6
+North Korea     6
+Norway  97
+Panama  1
+Paraguay        0
+Poland  20
+Portugal        1
+Puerto Rico     0
+Qatar   0
+Romania 57
+Russia  234
+Saudi Arabia    0
+Serbia  1
+Serbia and Montenegro   11
+Singapore       0
+Slovakia        10
+Slovenia        5
+South Africa    10
+South Korea     110
+Spain   19
+Sri Lanka       0
+Sudan   0
+Sweden  57
+Switzerland     21
+Syria   0
+Tajikistan      0
+Thailand        6
+Togo    0
+Trinidad and Tobago     1
+Tunisia 2
+Turkey  9
+Uganda  1
+Ukraine 31
+United Arab Emirates    1
+United States   552
+Uruguay 0
+Uzbekistan      5
+Venezuela       1
+Vietnam 0
+Zimbabwe        2
+Time taken: 29.34 seconds, Fetched: 110 row(s)
+hive> describe college;
+OK
+clg_id                  int
+clg_name                string
+clg_loc                 string
+Time taken: 0.313 seconds, Fetched: 3 row(s)
+hive> select * from college;
+OK
+2       vit     vlr
+3       srm     chen
+4       lpu     del
+5       stanford        uk
+6       JNTUA   atp
+7       cambridge       us
+Time taken: 0.183 seconds, Fetched: 6 row(s)
+hive> update college set clg_name ='ABC' where clg_id = 2;
+Query ID = acadgild_20160807100101_2ddf1e20-8f1f-4ea1-b410-ce6f835ca0eb
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 5
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1470540234542_0009, Tracking URL = http://localhost:8088/proxy/application_1470540234542_0009/
+Kill Command = /home/acadgild/hadoop-2.6.0/bin/hadoop job  -kill job_1470540234542_0009
+Hadoop job information for Stage-1: number of mappers: 5; number of reducers: 5
+2016-08-07 10:01:14,572 Stage-1 map = 0%,  reduce = 0%
+2016-08-07 10:02:18,325 Stage-1 map = 20%,  reduce = 0%, Cumulative CPU 8.2 sec
+2016-08-07 10:02:21,831 Stage-1 map = 80%,  reduce = 0%, Cumulative CPU 19.46 sec
+2016-08-07 10:02:23,166 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 20.86 sec
+2016-08-07 10:02:55,868 Stage-1 map = 100%,  reduce = 27%, Cumulative CPU 22.3 sec
+2016-08-07 10:02:58,910 Stage-1 map = 100%,  reduce = 40%, Cumulative CPU 23.7 sec
+2016-08-07 10:03:03,316 Stage-1 map = 100%,  reduce = 67%, Cumulative CPU 25.82 sec
+2016-08-07 10:03:04,649 Stage-1 map = 100%,  reduce = 73%, Cumulative CPU 26.66 sec
+2016-08-07 10:03:07,051 Stage-1 map = 100%,  reduce = 86%, Cumulative CPU 28.22 sec
+2016-08-07 10:03:13,643 Stage-1 map = 100%,  reduce = 99%, Cumulative CPU 32.46 sec
+2016-08-07 10:03:16,179 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 35.94 sec
+MapReduce Total cumulative CPU time: 35 seconds 940 msec
+Ended Job = job_1470540234542_0009
+Loading data to table default.college
+Table default.college stats: [numFiles=4, numRows=6, totalSize=2249, rawDataSize=1246]
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 5  Reduce: 5   Cumulative CPU: 35.94 sec   HDFS Read: 3177 HDFS Write: 914 SUCCESS
+Total MapReduce CPU Time Spent: 35 seconds 940 msec
+OK
+Time taken: 135.996 seconds
+hive> select * from college;
+OK
+2       ABC     vlr
+3       srm     chen
+4       lpu     del
+5       stanford        uk
+6       JNTUA   atp
+7       cambridge       us
+Time taken: 0.231 seconds, Fetched: 6 row(s)
+hive> delete from college where clg_id = 7;
+Query ID = acadgild_20160807100404_df5f2c00-a66f-46fe-9033-40c8e6d2a91d
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 5
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1470540234542_0010, Tracking URL = http://localhost:8088/proxy/application_1470540234542_0010/
+Kill Command = /home/acadgild/hadoop-2.6.0/bin/hadoop job  -kill job_1470540234542_0010
+Hadoop job information for Stage-1: number of mappers: 5; number of reducers: 5
+2016-08-07 10:04:47,043 Stage-1 map = 0%,  reduce = 0%
+2016-08-07 10:05:51,430 Stage-1 map = 40%,  reduce = 0%, Cumulative CPU 10.12 sec
+2016-08-07 10:05:55,273 Stage-1 map = 60%,  reduce = 0%, Cumulative CPU 17.08 sec
+2016-08-07 10:05:56,866 Stage-1 map = 80%,  reduce = 0%, Cumulative CPU 18.12 sec
+2016-08-07 10:05:58,241 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 19.58 sec
+2016-08-07 10:06:28,065 Stage-1 map = 100%,  reduce = 67%, Cumulative CPU 24.01 sec
+2016-08-07 10:06:31,810 Stage-1 map = 100%,  reduce = 80%, Cumulative CPU 25.68 sec
+2016-08-07 10:06:34,577 Stage-1 map = 100%,  reduce = 86%, Cumulative CPU 27.06 sec
+2016-08-07 10:06:39,935 Stage-1 map = 100%,  reduce = 99%, Cumulative CPU 31.71 sec
+2016-08-07 10:06:42,476 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 32.47 sec
+MapReduce Total cumulative CPU time: 32 seconds 470 msec
+Ended Job = job_1470540234542_0010
+Loading data to table default.college
+Table default.college stats: [numFiles=5, numRows=5, totalSize=2742, rawDataSize=1246]
+MapReduce Jobs Launched:
+Stage-Stage-1: Map: 5  Reduce: 5   Cumulative CPU: 32.47 sec   HDFS Read: 4000 HDFS Write: 732 SUCCESS
+Total MapReduce CPU Time Spent: 32 seconds 470 msec
+OK
+Time taken: 131.339 seconds
+hive> select * from college;
+OK
+2       ABC     vlr
+3       srm     chen
+4       lpu     del
+5       stanford        uk
+6       JNTUA   atp
+Time taken: 0.286 seconds, Fetched: 5 row(s)
+hive>
+
